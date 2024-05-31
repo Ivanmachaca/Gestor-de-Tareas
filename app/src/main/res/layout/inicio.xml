@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="GESTOR DE TAREAS"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <ImageView
+        android:id="@+id/calendarImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/calendario"
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendarImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="GESTOR DE TAREAS"
+        android:textSize="25sp"
+        android:textColor="#B30F1010"/>
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textSize="25dp"
+        android:textColorHint=""
+        android:layout_below="@id/subtitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#1196D3" <!-- Dark turquoise background -->
+
+    <Button
+        android:id="@+id/registerInfoButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="registrarse"
+        android:textSize="25dp"
+        android:layout_below="@id/registerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#40C4FF"
+</RelativeLayout>

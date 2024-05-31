@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66C0E8">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Iniciar sesión"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF" /> <!-- Color del texto blanco -->
+
+    <!-- Imagen del calendario -->
+    <ImageView
+        android:id="@+id/calendarImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/imagen1"
+        android:tint="#FFA500" /> <!-- Reemplazar con tu recurso drawable, color de la imagen naranja -->
+
+    <!-- Subtítulo: Iniciar sesión -->
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendarImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Iniciar sesión"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF" /> <!-- Color del texto blanco -->
+
+    <!-- Campo de texto: Correo electrónico -->
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:hint="Correo electrónico:"
+        android:backgroundTint="#D2B48C"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#070707" /> <!-- Fondo beige y texto negro -->
+
+    <!-- Campo de texto: Contraseña -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Contraseña:"
+        android:backgroundTint="#D2B48C"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="textPassword" /> <!-- Fondo beige y texto negro -->
+
+    <!-- Botón: Ingresar -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="#68EDCE"
+        android:text="Ingresar"
+        android:textColor="#0C2D63"
+        android:textStyle="bold" /> <!-- Fondo azul claro y texto negro -->
+
+    <!-- Texto: ¿No tienes una cuenta? Regístrate -->
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="¿No tienes una cuenta? Regístrate"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
