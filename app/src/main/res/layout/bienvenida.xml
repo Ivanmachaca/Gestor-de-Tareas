@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B6CACC"
     >
-    <!-- Sección de bienvenida -->
+
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
@@ -15,9 +16,8 @@
         android:text="Bienvenido(a):"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#000000" /> <!-- Color del texto negro -->
+        android:textColor="#000000" />
 
-    <!-- Nombres label -->
     <TextView
         android:id="@+id/nameLabelTextView"
         android:layout_width="wrap_content"
@@ -27,10 +27,10 @@
         android:layout_marginStart="20dp"
         android:text="Nombres:"
         android:textStyle="italic"
-        android:textSize="18sp"
-        android:textColor="#000000" /> <!-- Color del texto negro -->
+        android:textSize="20sp"
+        android:textColor="#000000" />
 
-    <!-- Correo label -->
+
     <TextView
         android:id="@+id/emailLabelTextView"
         android:layout_width="wrap_content"
@@ -40,73 +40,71 @@
         android:layout_marginStart="20dp"
         android:text="Correo:"
         android:textStyle="italic"
-        android:textSize="18sp"
-        android:textColor="#000000" /> <!-- Color del texto negro -->
+        android:textSize="20sp"
+        android:textColor="#000000" />
 
-    <!-- Primera fila de iconos -->
+
     <RelativeLayout
         android:id="@+id/firstRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/emailLabelTextView"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="33dp"
         android:padding="40dp">
 
-        <!-- Agregar icono -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/addImageView"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/ic_add" /> <!-- Reemplazar con tu recurso drawable -->
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/agregar" />
 
-            <!-- Agregar label -->
+
             <TextView
                 android:id="@+id/addLabelTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="Agregar"
-                android:textStyle="italic"
-                android:textSize="18sp"
-                android:textColor="#000000" /> <!-- Color del texto negro -->
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic" />
 
         </LinearLayout>
 
-        <!-- Mis notas icono -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toEndOf="@id/addImageView"
-            android:layout_marginStart="249dp">
+            android:layout_marginStart="249dp"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/notesImageView"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/ic_notes" /> <!-- Reemplazar con tu recurso drawable -->
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nota" />
 
-            <!-- Mis notas label -->
+
             <TextView
                 android:id="@+id/notesLabelTextView"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="Mis notas"
-                android:textStyle="italic"
-                android:textSize="18sp"
-                android:textColor="#000000" /> <!-- Color del texto negro -->
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:textStyle="italic" />
 
         </LinearLayout>
     </RelativeLayout>
 
-    <!-- Segunda fila de iconos -->
     <RelativeLayout
         android:id="@+id/secondRow"
         android:layout_width="match_parent"
@@ -115,7 +113,7 @@
         android:layout_marginTop="50dp"
         android:padding="40dp">
 
-        <!-- Importante icono -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,38 +122,36 @@
 
             <ImageView
                 android:id="@+id/importantImageView"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/ic_important" /> <!-- Reemplazar con tu recurso drawable -->
-
-            <!-- Importante label -->
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/importante" />             <!-- Importante label -->
             <TextView
                 android:id="@+id/importantLabelTextView"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="Importante"
                 android:textStyle="italic"
-                android:textSize="18sp"
-                android:textColor="#000000" /> <!-- Color del texto negro -->
+                android:textSize="20sp"
+                android:textColor="#000000" />
 
         </LinearLayout>
 
-        <!-- Contactos icono -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_toEndOf="@id/importantImageView"
-            android:layout_marginStart="249dp">
+            android:layout_marginStart="242dp">
 
             <ImageView
                 android:id="@+id/contactsImageView"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/ic_contacts" /> <!-- Reemplazar con tu recurso drawable -->
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/contactos" />
 
-            <!-- Contactos label -->
+
             <TextView
                 android:id="@+id/contactsLabelTextView"
                 android:layout_width="wrap_content"
@@ -163,8 +159,8 @@
                 android:layout_marginTop="15dp"
                 android:text="Contactos"
                 android:textStyle="italic"
-                android:textSize="18sp"
-                android:textColor="#000000" /> <!-- Color del texto negro -->
+                android:textSize="20sp"
+                android:textColor="#000000" />
 
         </LinearLayout>
     </RelativeLayout>

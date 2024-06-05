@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCE5F8">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importante"
+        android:textSize="24sp"
+        android:textColor="#C16C6C"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/importantNotesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleTextView"
+        android:background="#91EAEA">
+
+        <TextView
+            android:id="@+id/note1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota Importante 1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:id="@+id/star1ImageView"
+            android:layout_width="50dp"
+            android:layout_height="50"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/note1TextView"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/importante" />
+
+        <TextView
+            android:id="@+id/note2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota Importante 2"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@id/note1TextView"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:id="@+id/star2ImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/note2TextView"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/importante" />
+
+        <!-- Puedes agregar más notas de la misma manera -->
+
+    </RelativeLayout>
+</RelativeLayout>

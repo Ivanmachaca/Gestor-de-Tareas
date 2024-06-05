@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#987DE4">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contactos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/contactsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleTextView"
+        android:background="#B1A2DD">
+
+
+        <ImageView
+            android:id="@+id/facebookImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/facebook" />
+
+        <TextView
+            android:id="@+id/facebookTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_toEndOf="@id/facebookImageView"
+            android:layout_alignTop="@id/facebookImageView"
+            android:layout_marginStart="20dp" />
+
+
+        <ImageView
+            android:id="@+id/twitterImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/facebookImageView"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/twitter" />
+
+        <TextView
+            android:id="@+id/twitterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twitter"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_toEndOf="@id/twitterImageView"
+            android:layout_alignTop="@id/twitterImageView"
+            android:layout_marginStart="20dp" />
+
+
+        <ImageView
+            android:id="@+id/emailImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/twitterImageView"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/correo" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo Electrónico"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_toEndOf="@id/emailImageView"
+            android:layout_alignTop="@id/emailImageView"
+            android:layout_marginStart="20dp" />
+
+
+        <ImageView
+            android:id="@+id/phoneImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/emailImageView"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/telefono" />
+
+        <TextView
+            android:id="@+id/phoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teléfono"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_toEndOf="@id/phoneImageView"
+            android:layout_alignTop="@id/phoneImageView"
+            android:layout_marginStart="20dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
