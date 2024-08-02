@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332813119470",
+    "project_id": "gestor-de-tareas-d0fc8",
+    "storage_bucket": "gestor-de-tareas-d0fc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332813119470:android:72d31c219d40c0af0ba8ff",
+        "android_client_info": {
+          "package_name": "machaca.ventura.gestordetareas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKy4QbGgkS_8kYkM7OzcgQrKS02WrqDLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

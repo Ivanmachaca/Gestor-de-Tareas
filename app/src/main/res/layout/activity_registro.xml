@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CDD8D5">
+    android:background="#CDD8D5"
+    tools:context=".registroActivity">
 
     <TextView
         android:id="@+id/titulo"
@@ -15,7 +19,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
 
-    <!-- Imagen -->
     <ImageView
         android:id="@+id/imagen"
         android:layout_width="100dp"
@@ -23,9 +26,8 @@
         android:layout_below="@id/titulo"
         android:background="@drawable/imagen1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"/>
 
-    <!-- Nombre -->
     <TextView
         android:id="@+id/nombreTitulo"
         android:layout_width="wrap_content"
@@ -48,7 +50,6 @@
         android:hint="Ingrese su nombre"
         android:layout_marginTop="10dp"/>
 
-    <!-- Correo -->
     <TextView
         android:id="@+id/correoTitulo"
         android:layout_width="wrap_content"
@@ -71,7 +72,6 @@
         android:hint="Ingrese su correo"
         android:layout_marginTop="10dp"/>
 
-    <!-- Contraseña -->
     <TextView
         android:id="@+id/contraseñaTitulo"
         android:layout_width="wrap_content"
@@ -95,7 +95,6 @@
         android:layout_marginTop="10dp"
         android:inputType="textPassword"/>
 
-    <!-- Confirmar Contraseña -->
     <TextView
         android:id="@+id/confirmarContraseñaTitulo"
         android:layout_width="wrap_content"
@@ -119,7 +118,6 @@
         android:layout_marginTop="10dp"
         android:inputType="textPassword"/>
 
-    <!-- Botón Registrarse -->
     <Button
         android:id="@+id/botonRegistrarse"
         android:layout_width="match_parent"
@@ -130,7 +128,6 @@
         android:layout_below="@id/confirmarContraseñaEditText"
         android:layout_marginTop="20dp"/>
 
-    <!-- Tengo una cuenta -->
     <TextView
         android:id="@+id/tengoCuentaTitulo"
         android:layout_width="wrap_content"
@@ -141,4 +138,5 @@
         android:layout_below="@id/botonRegistrarse"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
+
 </RelativeLayout>
